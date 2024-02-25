@@ -1,7 +1,7 @@
 const TelegramBot = require("node-telegram-bot-api");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const token = "7011738092:AAGxceHmxCaP17vkWt3J2ijsVM55l1gHou4";
+const token = process.env.TELEGRAM_BOT_TOKEN;
 
 //bot using 'polling' to get new updates
 const bot = new TelegramBot(token, { polling: true });
